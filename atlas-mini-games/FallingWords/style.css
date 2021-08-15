@@ -1,0 +1,475 @@
+@font-face {
+    font-family: newacademy;
+    src: url('./Resources/Font/NEWACADEMY.ttf');
+}
+
+@font-face {
+    font-family: MontserratFont;
+    src: url('./Resources/Font/Montserrat-Medium.ttf')
+}
+
+#loading {
+    width: 100vw;
+    height: 100vh;
+    background-color: #2A52BE;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    opacity: 0.6;
+}
+
+#loadingtext {
+    font-size: 32px;
+    font-family: 'newacademy';
+    text-align: center;
+}
+
+.mainbutton {
+    width: 280px;
+    height: 60px;
+    background: #B8CED3;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 6px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    transition: 0.3s;
+
+    font-size: 42px;
+    font-family: 'newacademy';
+    font-weight: bold;
+    text-align: center;
+    padding-top: 16px;
+}
+
+.mainbutton:hover {
+    background: #C0EBE7;
+    width: 300px;
+    height: 80px;
+    padding-top: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    
+    font-size: 48px;
+}
+
+.optionbutton {
+    width: 240px;
+    height: 40px;
+    background: #B8CED3;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 6px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    transition: 0.3s;
+
+    font-size: 42px;
+    font-family: 'newacademy';
+    font-weight: bold;
+    text-align: center;
+    padding-top: 16px;
+}
+
+#changebackground {
+    font-size: 32px;
+    padding-top: 12px;
+    top: 42%;
+    opacity: 0;
+    animation: display 0.5s 0.5s both;
+}
+
+#sound {
+    font-size: 32px;
+    padding-top: 12px;
+    top: 55%;
+    opacity: 0;
+    animation: display 0.5s 0.5s both;
+}
+
+.optionbutton:hover {
+    background: #C0EBE7;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#next {
+    font-size: 28px;
+    padding-top: 12px;
+    width: 220px;
+    top: 42%;
+    left: calc(50% + 280px);
+    opacity: 1.0;
+    animation: next 0.5s 0s both;
+}
+
+#previous {
+    font-size: 28px;
+    padding-top: 12px;
+    width: 220px;
+    top: 42%;
+    left: calc(50% - 280px);
+    opacity: 1.0;
+    animation: previous 0.5s 0s both;
+}
+
+#soundbut {
+    font-size: 28px;
+    padding-top: 12px;
+    width: 220px;
+    top: 55%;
+    left: calc(50% + 280px);
+    opacity: 1.0;
+    animation: next 0.5s 0s both;
+}
+
+#musicbut {
+    font-size: 28px;
+    padding-top: 12px;
+    width: 220px;
+    top: 55%;
+    left: calc(50% - 280px);
+    opacity: 1.0;
+    animation: previous 0.5s 0s both;
+}
+
+#guidecontent {
+    width: 560px;
+    height: 355px;
+    background: #B8CED3;
+    opacity: 0;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 6px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 58%;
+    padding-left: 16px;
+    padding-right: 16px;
+    animation: display 1s 0.5s both;
+}
+
+.guidetext {
+    font-size: 16px;
+    font-family: 'MontserratFont';
+    font-weight: bold;
+    text-align: center;
+    padding-top: 16px;
+    margin: 0px;
+}
+
+#contactbar {
+    position: absolute;
+    transform: translate(-50%, 0%);
+    left: 50%;
+}
+
+.guideicon {
+    position: relative;
+    height: 16px;
+    width: 16px;
+    padding-top: 12px;
+    padding-left: 8px;
+}
+
+.langbut {
+    width: 300px;
+    height: 50px;
+    background: #B8CED3;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 6px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    transition: 0.3s;
+
+    font-size: 32px;
+    font-family: 'newacademy';
+    font-weight: bold;
+    text-align: center;
+    padding-top: 8px;
+}
+
+.langbut:hover {
+    background: #C0EBE7;
+    width: 320px;
+    height: 60px;
+    cursor: pointer;
+    transition: 0.3s;
+    
+    font-size: 36px;
+}
+
+.block {
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 4px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: -50px;
+    animation: fall 8s linear 0s;
+}
+
+.blocktext {
+    font-family: 'MontserratFont';
+    font-weight: bold;
+    font-size: 18px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+}
+
+#scorebar {
+    width: 720px;
+    height: 100px;
+    background: none;
+    position: absolute;
+    transform: translate(-50%, 0%);
+    left: 50%;
+    top: -20px;
+}
+
+#inputbox {
+    width: 320px;
+    height: 80px;
+    background-color: #B8CED3;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: black;
+    border-width: 4px;
+    position: absolute;
+    transform: translate(-50%, 0%);
+    left: 50%;
+}
+
+#typetext {
+    font-family: 'MontserratFont';
+    background-color: #B8CED3;
+    width: 300px;
+    height: 70px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    font-size: 32px;
+}
+
+.point {
+    width: 720px;
+    height: 60px;
+    background-color: #B8CED3;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: black;
+    border-width: 4px;
+    position: absolute;
+    left: 0%;
+}
+
+#correct {
+    width: 190px;
+    font-family: 'MontserratFont';
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    left: 1%;
+}
+
+#incorrect {
+    width: 190px;
+    font-family: 'MontserratFont';
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    right: 0%;
+}
+
+#gameover {
+    width: 400px;
+    height: 400px;
+    background: #B8CED3;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 4px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    animation: appear 0.5s;
+}
+
+.gameovertext {
+    font-family: 'newacademy';
+    text-align: center;
+    position: relative;
+    transform: translate(-50%, -50%);
+    animation-fill-mode: backwards;
+}
+
+#gameovertext {
+    font-size: 42px;
+    font-weight: 900;
+    color: #A6372D;
+    left: 50%;
+    top: 5%;
+    animation: textappear 0.5s 0.5s;
+    animation-fill-mode: both;
+}
+
+#score {
+    font-size: 64px;
+    font-weight: 900;
+    color: #2DA663;
+    left: 50%;
+    margin: 0;
+    animation: textappear 0.5s 1s;
+    animation-fill-mode: both;
+}
+
+#correctnum {
+    font-size: 24px;
+    font-weight: 900;
+    color: black;
+    left: 50%;
+    margin: 0;
+    animation: textappear 0.5s 1s;
+    animation-fill-mode: both;
+}
+
+#incorrectnum {
+    font-size: 24px;
+    font-weight: 900;
+    color: black;
+    left: 50%;
+    margin: 5px;
+    animation: textappear 0.5s 1s;
+    animation-fill-mode: both;
+}
+
+#buttonpane {
+    width: 320px;
+    height: 40px;
+    background: transparent;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    bottom: 8%;
+    left: 50%;
+}
+
+.gameoverbutton {
+    width: 160px;
+    height: 40px;
+    background: #B8CED3;
+    /*position: absolute;*/
+
+    font-size: 20px;
+    font-family: 'newacademy';
+    font-weight: bold;
+    text-align: center;
+    padding-top: 12px;
+
+    transition: 0.3s;
+}
+
+#playagain {
+    border-radius: 10px 0 0 10px;
+    border-style: solid;
+    border-width: 4px 2px 4px 4px;
+}
+
+#mainmenu {
+    border-radius: 0 10px 10px 0;
+    border-style: solid;
+    border-width: 4px 4px 4px 2px;
+}
+
+.gameoverbutton:hover {
+    cursor: pointer;
+    background: #2DA663;
+    transition: 0.3s;
+}
+
+@keyframes fall {
+    0% {
+        top: -5%;
+    }
+    100% {
+        top: 72%;
+    }
+}
+
+@keyframes boxout {
+    0% {
+        top: -120px;
+    }
+    100% {
+        top: -20px;
+    }
+}
+
+@keyframes boxin {
+    0% {
+        top: -20px;
+    }
+    100% {
+        top: -120px;
+        display: none;
+    }
+}
+
+@keyframes appear {
+    0% {
+        top: 40%;
+        opacity: 0;
+    }
+    100% {
+        top: 50%;
+        opacity: 1.0;
+    }
+}
+
+@keyframes textappear {
+    0% {
+        top: 0%;
+        opacity: 0;
+    }
+    100% {
+        top: 2%;
+        opacity: 1.0;
+    }
+}
+
+@keyframes mainbut {
+    100% {
+        top: 25%;
+    }
+}
+
+@keyframes display {
+    100% {
+        opacity: 1.0;
+    }
+}
+
+@keyframes next {
+    0% {
+        left: 65%;
+        opacity: 0;
+    }    
+}
+
+@keyframes previous {
+    0% {
+        left: 35%;
+        opacity: 0;
+    }
+}

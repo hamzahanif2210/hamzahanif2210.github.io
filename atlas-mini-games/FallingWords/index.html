@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Falling Words</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Resources/icon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="rdword.js"></script>
+	<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body background=".\Resources\Background\1.png"style="background-size: 100vw 100vh;">
+    <div id="backgroundmusic">
+        <audio id="bgmusic" preload="auto" src="Resources/Sound/bgmusic1.mp3" loop></audio>
+    </div>
+    <div id="audio"></div>
+        <audio id="blocksound" preload="metadata" src="Resources/Sound/blocksound1.mp3">
+        </audio>
+        <audio id="buttonhover" preload="metadata">
+            <source src="Resources/Sound/button.mp3"></source>
+        </audio>
+        <audio id="buttonclick" preload="metadata">
+            <source src="Resources/Sound/button1.mp3"></source>
+        </audio>
+    </div>
+    <div id="mainground">
+        <div id="playButton" class="mainbutton" style="top: 25%;" onclick="chooselang();">PLAY</div>
+        <div id="guide">
+            <div id="guideButton" class="mainbutton" style="top: 40%;" onclick="guide();">GUIDE</div>
+            <div id="guidecontent" style="display: none;">
+                <p class="guidetext">Prevent a block from landing by typing the right word</p>
+                <p class="guidetext">For each right word, you get the score equally to the number of characters of the right word</p>
+                <p class="guidetext">For each wrong word, your score is decreased by half of the number of characters of the right word</p>
+
+            </div>
+        </div>
+        <div id="options" style="display: none;">
+            <div id="optionButton" class="mainbutton" style="top: 55%;" onclick="option();">OPTION</div>
+            <div id="changebackground" class="optionbutton" style="display: none;" onclick="changebackground();">THEME</div>
+            <div id="next" class="optionbutton" style="display: none" onclick="choosebg(1);">NEXT</div>
+            <div id="previous" class="optionbutton" style="display: none" onclick="choosebg(-1);">PREVIOUS</div>
+            <div id="sound" class="optionbutton" style="display:none" onclick="sound();">SOUND</div>
+            <div id="soundbut" class="optionbutton" style="display: none" onclick="sandm(1);">SOUND: ON</div>
+            <div id="musicbut" class="optionbutton" style="display: none" onclick="sandm(-1);">MUSIC: ON</div>
+        </div>
+    </div>
+    <div id="chooselanguage" style="display:none;">
+        <div id="eng" class="langbut" style="top:40%;" onclick="language(0);play();">ENGLISH</div>
+        <div id="vie" class="langbut" style="top:55%;" onclick="language(1);play();">French</div>
+    </div>
+    <div id="playground" style="display:none;"></div>
+    <div id="scorebar" style="display:none;">
+        <div id="point" class="point">
+            <p id="correct">Words: 0</p>
+            <p id="incorrect">Mistakes: 0</p>
+        </div>
+        <div id="inputbox" style="float: left;">
+            <input type="text" id="typetext" style="border-style:none;">
+        </div>
+    </div>
+    <div id="gameover" style="display:none;">
+        <p id="gameovertext" class="gameovertext">GAME OVER</p>
+        <p id="score" class="gameovertext"></p>
+        <p id="correctnum" class="gameovertext">WORDS: 0</p>
+        <p id="incorrectnum" class="gameovertext">MISTAKES: 0</p>
+        <div id="buttonpane" style="display: flex">
+            <div id="playagain" class="gameoverbutton" onclick="play();">PLAY AGAIN</div>
+            <div id="mainmenu" class="gameoverbutton" onclick="mainmenu();">MAIN MENU</div>
+        </div>
+    </div>
+    <div id="loading">
+        <p id="loadingtext">LOADING, PLEASE WAIT...</p>
+    </div>
+    <script>
+        if (screen.width < screen.height) alert("Play on your computer for best experiences!")
+        $(document).ready(function() {
+            $('#loading').hide();
+            $('#bgmusic')[0].play();
+            document.getElementById('bgmusic').volume = 0.5;
+        });
+    </script>
+</body>
+</html>
