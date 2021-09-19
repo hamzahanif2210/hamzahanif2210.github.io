@@ -1,0 +1,27 @@
+<section id="speakers" class="section-accent">
+  <div>
+    <h1>
+      Organizing Committee
+    </h1>
+    <hr>
+    <div class="speakers">
+      {% for speaker in site.data.2020.speakers %}
+      <div class="speaker">
+        <img src={{speaker.avatar}} alt={{speaker.name}} class="avatar">
+        <h3>{{speaker.name}}</h3>
+        <p class="social_media">
+
+        {% if speaker.linkedin != "" and speaker.linkedin != nil %}
+          <a class="social_media__icon" href="https://www.linkedin.com/in/{{speaker.linkedin}}" target="_blank" title={{speaker.linkedin}}>
+            <i aria-hidden="true" class="fa fa-linkedin fa-lg"></i>
+          </a>
+        {% endif %}
+        </p>
+        <p class="bio">
+         {{speaker.bio}}
+        </p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
