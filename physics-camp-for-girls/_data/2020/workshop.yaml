@@ -1,0 +1,10 @@
+- name: Nociones estadísticas para manejo de datos
+  summary: "En la actualidad hay una gran cantidad de datos que se representan y analizan, y sus resultados son mostrados en canales de televisión, en medios digitales… ¿Entendemos realmente lo que nos quieren decir esas representaciones? ¿Somos capaces de detectar errores o malas prácticas? En este taller se verán conceptos estadísticos básicos y se darán unas directrices para entender y analizar esta información."
+  local: Lab. Grace Hooper - 1B - ETSInf
+  twitter: angeles_calduch
+
+- name: Aplicando NLP para extraer y estructurar información no financiera y automatizar procesos con Airflow
+  summary: "El mundo se encuentra en un marco de problemas sociales, medioambientales, de gobernanza y de tecnología que llevan retos. En general, cada vez la sociedad está más preocupada, comprometida y tomando medidas al respecto. Si nos sumergimos un poco más, podemos ver que las empresas están en el centro del problema, por ello, también de la solución, pues tienen impactos reales en las comunidades, el medio ambiente, los productos, etc. Estos asuntos no financieros impactan de forma positiva y negativa el modelo de negocio empresarial; lo cual se puede corroborar en las noticias que se publican diariamente en la Web. Sin embargo es tan elevado el volumen de información que resulta imposible, para un humano, leerlas o  analizarlas.  Es ahí donde, las técnicas de procesamiento de lenguaje natural (NLP) juegan un papel relevante para abstraer el conocimiento. En este taller usaremos NLP para recuperar y analizar  información por temas de interés: derechos humanos o laborales, emisiones de contaminantes,  diversidad, entre otros. Mediante spaCy vamos a extraer y relacionar estos conceptos principales. Por último, con Airflow automatizaremos los procesos de manipulación, extracción, y transformación de datos de manera que puedan ser ejecutados y monitoreados periódicamente."
+  local: Lab. Richard Stallman - 1B - ETSInf
+  twitter: li_sepul
+  twitter: ValeriaHaro
