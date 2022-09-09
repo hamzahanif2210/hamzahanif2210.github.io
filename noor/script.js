@@ -304,7 +304,7 @@ function reveal() {
   }
   
   var ifrm = document.createElement("iframe");
-        ifrm.setAttribute("src", "https://www.youtube.com/watch?v=ChmptvWlfBs?controls=0&loop=1&autoplay=1");
+        ifrm.setAttribute("src", "https://www.youtube.com/embed/ChmptvWlfBs?controls=0&loop=1&autoplay=1");
         //ifrm.style.width = `${w}px`;
         //ifrm.style.height = `${h}px`;
         ifrm.style.border = 'none';
